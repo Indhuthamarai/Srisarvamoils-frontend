@@ -1,0 +1,80 @@
+.card {
+    width: 280px;
+    height: 680px;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 2% 2%;
+    background-color: rgba(226, 237, 244, 0.815);
+
+}
+
+.product-images{
+    width: 100%;
+    max-width: 150px;
+    min-height: 100px;
+    display: block;
+    object-fit: cover;
+}
+.product-names{
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+.product-prices{
+    margin: 0px 0px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 30px;
+} 
+.product-add-buttons{
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(235, 173, 57);
+    color: white;
+    width: 40%;
+    height: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 5px auto;
+    margin-left: 15px;
+}
+.product-add-buttons:hover{
+    background-color: #29065e;
+}
+.update-delete-button{
+    display: inline;
+    margin-bottom: 4%;
+    /* white-space: 10px; */
+}
+.product-add-buttonss{
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(244, 54, 54);
+    color: white;
+    width: 40%;
+    height: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 5px auto;
+    margin-left: 15px;
+    
+}
+.product-add-buttonss:hover{
+    background-color: #29065e;
+}
+.allproducts
+    {
+        margin-top: 1%;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 2%;
+    }
+.allproducts img {
+    margin-left: 7%;
+}

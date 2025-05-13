@@ -1,0 +1,133 @@
+.payment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 20px;
+  }
+  
+  .payment-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .payment-card h2 {
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 1.8rem;
+  }
+  
+  .order-details {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  .order-total {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .payment-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  
+  .pay-button {
+    background-color: #F37254; /* Razorpay's primary color */
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pay-button:hover {
+    background-color: #e45a3d;
+  }
+  
+  .pay-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .cancel-button {
+    background-color: transparent;
+    color: #666;
+    border: 1px solid #ccc;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .cancel-button:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .payment-info {
+    margin-top: 20px;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .payment-security {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+  }
+  
+  .security-icon {
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 600px) {
+    .payment-card {
+      padding: 20px;
+    }
+    
+    .payment-card h2 {
+      font-size: 1.5rem;
+    }
+    
+    .order-total {
+      font-size: 1.3rem;
+    }
+    .popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+  }

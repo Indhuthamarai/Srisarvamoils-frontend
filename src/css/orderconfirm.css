@@ -1,0 +1,241 @@
+/* OrderConfirmation.css */
+.order-confirmation-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .confirmation-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .check-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .confirmation-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  
+  .confirmation-message {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+  
+  .order-number {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    font-size: 15px;
+    color: #555;
+  }
+  
+  .order-info-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .order-info-card {
+    flex: 1;
+    min-width: 180px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .order-info-icon {
+    margin-bottom: 10px;
+  }
+  
+  .order-info-details h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+  }
+  
+  .order-info-details p {
+    font-size: 15px;
+    color: #666;
+    margin: 0;
+  }
+  
+  .order-details-section {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 30px 0;
+    text-align: left;
+  }
+  
+  .order-details-section h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .order-items {
+    margin-bottom: 20px;
+  }
+  
+  .order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .order-item:last-child {
+    border-bottom: none;
+  }
+  
+  .item-details h3 {
+    font-size: 16px;
+    color: #333;
+    margin: 0 0 5px;
+  }
+  
+  .item-details p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+  }
+  
+  .item-price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .order-summary {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #555;
+  }
+  
+  .summary-item.total {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .action-buttons button {
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+  }
+  
+  .continue-shopping {
+    background-color: #F9A826;
+    color: white;
+  }
+  
+  .continue-shopping:hover {
+    background-color: #e89a22;
+  }
+  
+  .view-orders {
+    background-color: #ffffff;
+    color: #555;
+    border: 1px solid #ccc !important;
+  }
+  
+  .view-orders:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 50px;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .error-container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .error-container h2 {
+    color: #d32f2f;
+    margin-bottom: 16px;
+  }
+  
+  .error-container p {
+    margin-bottom: 24px;
+    color: #666;
+  }
+  
+  .action-button {
+    padding: 12px 24px;
+    background-color: #F9A826;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .order-info-container {
+      flex-direction: column;
+    }
+    
+    .order-info-card {
+      margin-bottom: 15px;
+    }
+    
+    .confirmation-card {
+      padding: 25px 15px;
+    }
+  }
