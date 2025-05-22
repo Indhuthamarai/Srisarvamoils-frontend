@@ -26,7 +26,7 @@ const AuthProvider = ({ children }) => {
     
     try {
       // Make API request with token
-      const response = await axios.get("http://localhost:5000/api/auth/me", {
+      const response = await axios.get("https://srisarvamoils-backend.onrender.com/api/auth/me", {
         headers: {
           Authorization: `Bearer ${token}`
         }

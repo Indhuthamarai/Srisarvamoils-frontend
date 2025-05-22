@@ -100,7 +100,7 @@ export default function Order() {
 
   // Fetch all orders from local backend on component mount
   useEffect(() => {
-    Axios.get("http://localhost:5000/api/orders")
+    Axios.get("https://srisarvamoils-backend.onrender.com/api/orders")
       .then((res) => {
         setOrders(res.data);
       })
@@ -122,7 +122,7 @@ export default function Order() {
     e.preventDefault();
     if (window.confirm("Do you want to update the order status?")) {
       try {
-        await Axios.put(`http://localhost:5000/api/orders/${id}`, {
+        await Axios.put(`https://srisarvamoils-backend.onrender.com/api/orders/${id}`, {
           status: statusUpdate[id] || "",
         });
         alert("Status updated successfully");
@@ -139,7 +139,7 @@ export default function Order() {
     e.preventDefault();
     if (window.confirm("Do you want to delete this order?")) {
       try {
-        await Axios.delete(`http://localhost:5000/api/orders/${id}`);
+        await Axios.delete(`https://srisarvamoils-backend.onrender.com/api/orders/${id}`);
         alert("Order deleted successfully");
         window.location.reload(); // or refetch orders
       } catch (err) {

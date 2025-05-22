@@ -22,7 +22,7 @@
 //         }
         
 //         // Fetch order details from the API
-//         const response = await Axios.get(`http://localhost:5000/api/orders/${orderId}`);
+//         const response = await Axios.get(`https://srisarvamoils-backend.onrender.com/api/orders/${orderId}`);
 //         setOrderDetails(response.data);
 //         setLoading(false);
 //       } catch (error) {
@@ -254,7 +254,7 @@ export default function OrderConfirmation() {
         }
         
         // Fetch order details from the API
-        const response = await Axios.get(`http://localhost:5000/api/orders/${orderId}`);
+        const response = await Axios.get(`https://srisarvamoils-backend.onrender.com/api/orders/${orderId}`);
         
         // If response.data is the order object directly
         if (response.data && (response.data.orderId || response.data._id)) {

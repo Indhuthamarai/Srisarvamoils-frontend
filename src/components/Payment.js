@@ -47,7 +47,7 @@ export default function Payment({ onPaymentSuccess }) {
 
   try {
     // Call your backend to create the order
-    const res = await fetch("http://localhost:5000/api/orders", {
+    const res = await fetch("https://srisarvamoils-backend.onrender.com/api/orders", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

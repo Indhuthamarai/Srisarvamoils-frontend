@@ -128,7 +128,7 @@ function ViewProduct() {
   const [editableFields, setEditableFields] = useState({});
 
   useEffect(() => {
-    Axios.get("http://localhost:5000/api/products")
+    Axios.get("https://srisarvamoils-backend.onrender.com/api/products")
       .then((res) => {
         setProducts(res.data);
       })
@@ -141,7 +141,7 @@ function ViewProduct() {
     e.preventDefault();
     if (window.confirm("Do you want to delete the product?")) {
       try {
-        await Axios.delete(`http://localhost:5000/api/products/delete/${id}`);
+        await Axios.delete(`https://srisarvamoils-backend.onrender.com/api/products/delete/${id}`);
         alert("Product deleted successfully!");
         setProducts(products.filter((product) => product._id !== id));
       } catch (err) {
@@ -170,7 +170,7 @@ function ViewProduct() {
     }
 
     try {
-      await Axios.put(`http://localhost:5000/api/products/update/${id}`, updates);
+      await Axios.put(`https://srisarvamoils-backend.onrender.com/api/products/update/${id}`, updates);
       alert("Product updated successfully!");
 
       // Clear updated field
@@ -200,7 +200,7 @@ function ViewProduct() {
         {products.map((val, key) => (
           <div className="allproducts" key={key}>
             <div className="card">
-              <img src={`http://localhost:5000${val.imageUrl}`} alt="product" width="80%" height="130%" />
+              <img src={`https://srisarvamoils-backend.onrender.com${val.imageUrl}`} alt="product" width="80%" height="130%" />
               <hr />
               <h5 className="product-name"><b>Name :</b> {val.name}</h5>
               <h5 className="product-name"><b>Price :</b> Rs. {val.price}</h5>

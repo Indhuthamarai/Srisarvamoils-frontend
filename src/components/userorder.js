@@ -33,7 +33,7 @@ function UserOrder() {
 
   const fetchUserOrders = async (email) => {
     try {
-      const res = await axios.post("http://localhost:5000/api/orders/user", {
+      const res = await axios.post("https://srisarvamoils-backend.onrender.com/api/orders/user", {
         email,
       });
       setOrders(res.data);

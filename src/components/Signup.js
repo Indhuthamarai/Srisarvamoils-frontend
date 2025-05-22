@@ -15,7 +15,7 @@ const Signup = () => {
     e.preventDefault();
     setError("");
     try {
-      await axios.post("http://localhost:5000/api/auth/signup", form);
+      await axios.post("https://srisarvamoils-backend.onrender.com/api/auth/signup", form);
       alert("Signup successful! Please login.");
       navigate("/login");
     } catch (err) {

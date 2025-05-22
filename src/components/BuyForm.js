@@ -53,7 +53,7 @@ export default function BuyForm() {
         items: cartItems,
       });
       
-      const response = await Axios.post("http://localhost:5000/api/orders", {
+      const response = await Axios.post("https://srisarvamoils-backend.onrender.com/api/orders", {
         name,
         email,
         contactno,

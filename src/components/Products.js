@@ -9,7 +9,7 @@ function Products(props) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://localhost:5000/api/products")
+    Axios.get("https://srisarvamoils-backend.onrender.com/api/products")
       .then((res) => {
         setProducts(res.data);
       })
@@ -22,7 +22,7 @@ function Products(props) {
     <div className="allproducts2" key={key}>
       <div className="card allvalues">
         <img
-          src={`http://localhost:5000${val.imageUrl}`}
+          src={`https://srisarvamoils-backend.onrender.com${val.imageUrl}`}
           alt="product"
           width="80%"
           height="130%"

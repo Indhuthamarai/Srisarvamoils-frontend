@@ -3,7 +3,7 @@ import "../../css/form.css";
 import Axios from "axios";
 import AdminNav from "./AdminNav";
 
-const url = "http://localhost:5000/uploads"; // backend image path
+const url = "https://srisarvamoils-backend.onrender.com/uploads"; // backend image path
 
 function Form() {
   const [name, setName] = useState("");
@@ -29,7 +29,7 @@ function Form() {
     }
   
     try {
-      const res = await Axios.post("http://localhost:5000/api/products/add", formData, {
+      const res = await Axios.post("https://srisarvamoils-backend.onrender.com/api/products/add", formData, {
         headers: {
           "Content-Type": "multipart/form-data"
         }

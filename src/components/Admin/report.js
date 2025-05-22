@@ -14,7 +14,7 @@ export default function Report() {
   const [csvData, setCsvData] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/report")
+    axios.get("https://srisarvamoils-backend.onrender.com/api/report")
       .then(res => {
         setReport(res.data);
         setCsvData([
